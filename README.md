@@ -1,4 +1,4 @@
-ng-autoRefresh
+autoRefresh
 ==============
 
 AngularJS Auto Refresh directive
