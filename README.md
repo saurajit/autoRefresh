@@ -20,3 +20,16 @@ Use it by adding it as HTML attributes
          refresh-in-background="true">{{val}}
 </div>
 ```
+
+The controller
+
+```javascript
+$scope.val = $scope.val2 = 0;
+    $scope.stopFlag = $scope.stopFlag2 = true;
+    $scope.update = function (val) {
+      if ($scope.val >= 20) {
+        $scope.stopFlag = false;
+      }
+      $scope.val += val;
+    };
+```
