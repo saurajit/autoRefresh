@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS autoRefresh Directive</title>
+    <link rel="stylesheet" href="resources/css/bootstrap-combined.min.css"/>
+</head>
+<body>
+<div ng-app="app" class="hero-unit">
+    <div ng-controller="MainCtrl" class="ng-cloak" ng-init="interval=1000">
+        <div class="well" auto-refresh="update(1)" refresh-interval="interval" refresh-stop="stopFlag"
+             refresh-in-background="true">{{val}}
+        </div>
+        <div>
+            <button ng-click="interval=500" class="btn">Change Interval</button>
+            <button ng-click="stopFlag=0" class="btn">Change Stop Flag</button>
+        </div>
+        <div>
+            <ul>
+                <li> Interval: {{interval}}</li>
+                <li> stopFlag: {{stopFlag}}</li>
+                <li> background:</li>
+            </ul>
+        </div>
+        <div class="well" auto-refresh="update2(1)" refresh-interval="2000" refresh-stop="stopFlag2"
+             refresh-in-background="true">{{val2}}
+        </div>
+        <!-- -->
+    </div>
+</div>
+<script src="resources/lib/angular.1.0.5.min.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
