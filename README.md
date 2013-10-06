@@ -3,7 +3,7 @@ autoRefresh
 
 AngularJS Auto Refresh directive
 
-Include the ng-autoRefresh.js file after including the AngularJS file.
+Include the autoRefresh.js file after including the AngularJS file.
 
 Add the module as dependency to your module
 ```javascript
