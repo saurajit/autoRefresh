@@ -16,7 +16,7 @@ angular.module('app', ['autoRefresh'])
 Use it by adding it as HTML attributes
 
 ```html
-    <div class="well" auto-refresh="update(1)" refresh-interval="interval" refresh-stop="stopFlag"
-             refresh-in-background="true">{{val}}
-    </div>
+<div class="well" auto-refresh="update(1)" refresh-interval="interval" refresh-stop="stopFlag"
+         refresh-in-background="true">{{val}}
+</div>
 ```
