@@ -33,3 +33,5 @@ $scope.val = $scope.val2 = 0;
       $scope.val += val;
     };
 ```
+
+This module is in eary development stage and needs refining. It is not safe for production use without proper evaluation.
